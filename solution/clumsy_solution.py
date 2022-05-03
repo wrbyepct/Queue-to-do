@@ -143,6 +143,7 @@ def even_start_odd_len_method(workIDs, height):
 
 def even_start_even_len_method(workIDs, height):
     num_list = []
+    # Odd index row, collect the last one
     for i in range(1, height, 2):
         num_list.append(workIDs[i][-1])
     return num_list
