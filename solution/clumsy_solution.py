@@ -58,13 +58,12 @@ start_num_12 = 31
 line_len_12 = 9
 
 
-def print_check_line(start, length):
-    # ID_to_check = get_workIDs_to_be_checked(start, length)
-    # return clever_XOR(ID_to_check, length)
-    return get_workIDs_to_be_checked(start, length)
+def clumsy_solution(start, length):
+    ID_to_check = get_workIDs_to_be_checked(start, length)
+    return nitpick_XOR(ID_to_check, length)
+    
 
-
-def clever_XOR(workIDs, length):
+def nitpick_XOR(workIDs, length):
     height = length
     total_elem = (1 + height) * height / 2
     number_to_be_XOR = []
